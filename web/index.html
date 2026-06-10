@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincle Cadaqués | Restaurante Mediterráneo</title>
+  <meta name="description" content="Restaurante mediterráneo en el corazón de Cadaqués. Cocina de temporada con arroces, mariscos y pescado fresco de la Costa Brava. Chef Alexandre Vehí. Reserva tu mesa.">
+  <meta property="og:title" content="Vincle Cadaqués | Restaurante Mediterráneo">
+  <meta property="og:description" content="Cuina mediterrània al cor del casc antic de Cadaqués. Chef Alexandre Vehí & Mónica Font.">
+  <meta property="og:image" content="https://static1.ara.cat/clip/ede11d0b-4bd0-4627-b411-3be6cb47cb0c_16-9-aspect-ratio_default_0_x1710y1384.jpg">
+  <meta property="og:type" content="restaurant">
+
+  <!-- Fonts: Fraunces (display) + Space Grotesk (UI/body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Space+Grotesk:wght@300..600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Grain texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+    <a href="#hero" class="nav-logo" aria-label="Vincle Cadaqués — Inicio">
+      <img src="../Logo/LOGO/LOGO-sf.png" alt="Vincle Cadaqués" class="nav-logo-img">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#restaurante">El Restaurante</a></li>
+      <li><a href="#cocina">La Cocina</a></li>
+      <li><a href="#vinos">Los Vinos</a></li>
+      <li><a href="#espacio">El Espacio</a></li>
+      <li><a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="nav-cta">Reservar</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Inicio">
+
+    <!-- ── Background ──
+         TO REPLACE WITH VIDEO:
+         1. Delete the .hero-glow div
+         2. Uncomment the <video> tag below
+         3. Set the poster image for before video loads
+    -->
+    <div class="hero-bg">
+      <!-- VIDEO (uncomment when ready):
+      <video class="hero-video" autoplay muted loop playsinline poster="../assets/images/hero-poster.jpg">
+        <source src="../assets/videos/hero.mp4" type="video/mp4">
+      </video>
+      -->
+      <div class="hero-glow" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Cadaqués · Costa Brava</p>
+      <h1 class="hero-title">
+        <span class="hero-word">Vincle</span>
+        <em class="hero-word">Cadaqués</em>
+      </h1>
+      <p class="hero-sub">Cuina mediterrània al cor del casc antic</p>
+      <div class="hero-actions">
+        <a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="btn btn-solid-light">
+          Reservar mesa
+          <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="#cocina" class="btn btn-ghost-light">Ver la carta</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span class="hero-scroll-label">Scroll</span>
+    </div>
+
+    <!-- Marquee strip -->
+    <div class="hero-marquee marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Cuina mediterrània</span>
+        <span>Cadaqués</span>
+        <span>Producto de temporada</span>
+        <span>Costa Brava</span>
+        <span>Arroces &amp; mariscos</span>
+        <span>Bóvedas del s. XIV</span>
+        <span>Cuina mediterrània</span>
+        <span>Cadaqués</span>
+        <span>Producto de temporada</span>
+        <span>Costa Brava</span>
+        <span>Arroces &amp; mariscos</span>
+        <span>Bóvedas del s. XIV</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EL RESTAURANTE
+  ══════════════════════════════════════ -->
+  <section class="section restaurante" id="restaurante" aria-label="El Restaurante">
+
+    <div class="restaurante-media">
+      <div class="parallax-wrap">
+        <!--
+          IMAGEN PRINCIPAL (temporal: foto de Ara.cat)
+          TO REPLACE: cambiar src por ../assets/images/interior-main.jpg
+        -->
+        <img
+          class="parallax-img"
+          src="../content/2026/IMG_0176.JPG"
+          alt="Interior del restaurante Vincle Cadaqués — bóvedas de piedra del siglo XIV"
+          width="1200"
+          height="900"
+          loading="lazy"
+        >
+      </div>
+    </div>
+
+    <div class="restaurante-body">
+      <p class="section-index"><span class="idx-num">01</span><span class="idx-line" aria-hidden="true"></span>El Restaurante</p>
+      <h2 class="section-title dark">
+        Donde la piedra<br>
+        y el mar<br>
+        <em>se unen</em>
+      </h2>
+      <p class="body-text">Escondido en un callejón tranquilo del casco antiguo de Cadaqués, Vincle es mucho más que un restaurante. Es un rincón donde las bóvedas de piedra del siglo XIV —parte del antiguo muro de la ciudad— conviven con una cocina mediterránea viva y honesta.</p>
+      <p class="body-text">La cocina del chef <strong>Alexandre Vehí</strong> y la sala dirigida por <strong>Mónica Font</strong>, formada junto a los hermanos Roca, crean una experiencia que equilibra la memoria de la abuela con la mirada contemporánea.</p>
+
+      <div class="restaurante-quote">
+        <blockquote>
+          <em>"Entre la memòria de l'àvia<br>i la mirada contemporània"</em>
+        </blockquote>
+      </div>
+
+      <div class="testimonios" id="testimonios" aria-label="Reseñas de clientes"></div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       LA COCINA
+  ══════════════════════════════════════ -->
+  <section class="cocina" id="cocina" aria-label="La Cocina">
+
+    <div class="cocina-header">
+      <p class="section-index light"><span class="idx-num">02</span><span class="idx-line" aria-hidden="true"></span>La Cocina</p>
+      <h2 class="section-title light">
+        El sabor del<br>
+        <em>Mediterráneo</em>
+      </h2>
+      <p class="cocina-sub">Producto de temporada, tradición y respeto. Eso es Vincle.</p>
+    </div>
+
+    <div class="dishes" role="list">
+
+      <article class="dish" role="listitem">
+        <div class="dish-img-wrap">
+          <span class="dish-num" aria-hidden="true">01</span>
+          <img src="../content/20.04.2024 - SESSIÓ/_DSC0265.jpg" alt="Rossinyols amb Polsim de Foie" width="600" height="750" loading="lazy">
+        </div>
+        <div class="dish-info">
+          <h3 class="dish-name">Rossinyols amb Polsim de Foie</h3>
+          <p class="dish-desc">Plato icónico: morels con salsa de la abuela y polvo frío de foie de Paco Pérez</p>
+        </div>
+      </article>
+
+      <article class="dish" role="listitem">
+        <div class="dish-img-wrap">
+          <span class="dish-num" aria-hidden="true">02</span>
+          <img src="../Recursos web/croqueta gamba vermella/IMG_4710.jpg" alt="Croquetes de Gamba Roja" width="600" height="750" loading="lazy">
+        </div>
+        <div class="dish-info">
+          <h3 class="dish-name">Croquetes de Gamba Roja</h3>
+          <p class="dish-desc">Gamba roja de la Costa Brava, bechamel artesanal</p>
+        </div>
+      </article>
+
+      <article class="dish" role="listitem">
+        <div class="dish-img-wrap">
+          <span class="dish-num" aria-hidden="true">03</span>
+          <img src="../content/2025_04_05/OK - 2 - 7. Arrós carta/IMG_4631.JPG" alt="Arròs de Temporada" width="600" height="750" loading="lazy">
+        </div>
+        <div class="dish-info">
+          <h3 class="dish-name">Arròs de Temporada</h3>
+          <p class="dish-desc">Arroz de mercado con los mejores productos de temporada</p>
+        </div>
+      </article>
+
+      <article class="dish" role="listitem">
+        <div class="dish-img-wrap">
+          <span class="dish-num" aria-hidden="true">04</span>
+          <img src="../Recursos web/Tartar tonyina/IMG_4617.jpg" alt="Tartar de Tonyina" width="600" height="750" loading="lazy">
+        </div>
+        <div class="dish-info">
+          <h3 class="dish-name">Tartar de Tonyina</h3>
+          <p class="dish-desc">Atún rojo fresco, vinagreta cítrica y flores del Cap de Creus</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="cocina-footer">
+      <a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="btn btn-solid-light">
+        Reservar mesa
+        <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       LOS VINOS
+  ══════════════════════════════════════ -->
+  <section class="vinos" id="vinos" aria-label="Los Vinos">
+
+    <div class="vinos-bigword" aria-hidden="true">Salut</div>
+
+    <div class="vinos-header">
+      <p class="section-index light"><span class="idx-num">03</span><span class="idx-line" aria-hidden="true"></span>Los Vinos</p>
+      <h2 class="section-title light">
+        Una bodega<br>
+        <em>de autor</em>
+      </h2>
+      <p class="vinos-sub">Mónica Font selecciona cada referencia con la misma precisión con la que cuida la sala. Vinos vivos, honestos y de territorios que cuentan historias.</p>
+    </div>
+
+    <div class="vinos-gallery">
+      <div class="vinos-gallery-track">
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0088.jpg" alt="Cosmic" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0091.jpg" alt="Poboleda — Mas Doix" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0093.jpg" alt="Nero Pinot Noir" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0096.jpg" alt="Terra Remota Clos Adrièn" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0098.jpg" alt="Els Escurçons — Priorat" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0101.jpg" alt="La Vinya d'en Tomàs" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0103.jpg" alt="Venus La Universal — Montsant" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0105.jpg" alt="Julieta 2022 — Trepat" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0107.jpg" alt="7.20 Lledoner Roig" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0109.jpg" alt="Mas Geli Solera n°2" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0112.jpg" alt="Blanc de Gresa" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0113.jpg" alt="La Fita — Vinyes de la Costa" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0116.jpg" alt="Pou de Tudela" loading="lazy"></div></div>
+        <div class="vino"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0118.jpg" alt="La Planette" loading="lazy"></div></div>
+        <!-- Duplicado para loop infinito -->
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0088.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0091.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0093.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0096.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0098.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0101.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0103.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0105.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0107.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0109.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0112.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0113.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0116.jpg" alt="" loading="lazy"></div></div>
+        <div class="vino" aria-hidden="true"><div class="vino-img"><img src="../content/20.04.2024 - SESSIÓ/_DSC0118.jpg" alt="" loading="lazy"></div></div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EL EQUIPO (Chef & Sommelier)
+  ══════════════════════════════════════ -->
+  <section class="section equipo" id="equipo" aria-label="El Equipo">
+    <div class="equipo-content">
+      <p class="section-index"><span class="idx-num">04</span><span class="idx-line" aria-hidden="true"></span>El Equipo</p>
+      <h2 class="section-title dark">
+        Dos visiones,<br>
+        una <em>experiencia</em>
+      </h2>
+      <div class="equipo-grid">
+        <div class="equipo-persona">
+          <div class="equipo-rol">Chef</div>
+          <h3 class="equipo-nombre">Alexandre Vehí</h3>
+          <p class="equipo-bio">Nativo de Cadaqués. Formado bajo la batuta de Paco Pérez en Miramar de Llançà. Cocina de raíz con técnica contemporánea, inspirada en la memoria de su abuela Montserrat.</p>
+        </div>
+        <div class="equipo-persona">
+          <div class="equipo-rol">Sala &amp; Vinos</div>
+          <h3 class="equipo-nombre">Mónica Font</h3>
+          <p class="equipo-bio">Sumiller y directora de sala. Formada con los hermanos Roca en El Celler de Can Roca. Su presencia convierte cada cena en una experiencia completa.</p>
+        </div>
+      </div>
+    </div>
+    <div class="equipo-media">
+      <div class="parallax-wrap equipo-parallax-wrap">
+        <img
+          class="parallax-img"
+          src="../Recursos web/IMG_4719.JPG"
+          alt="Alexandre Vehí y Mónica Font frente a Vincle Cadaqués"
+          width="700"
+          height="900"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EL ESPACIO (Parallax full-screen)
+  ══════════════════════════════════════ -->
+  <section class="espacio" id="espacio" aria-label="El Espacio">
+
+    <div class="espacio-parallax">
+      <!-- TO REPLACE WITH VIDEO when assets ready:
+        <video class="espacio-video" autoplay muted loop playsinline>
+          <source src="../assets/videos/interior.mp4" type="video/mp4">
+        </video>
+      -->
+      <img
+        class="espacio-bg"
+        src="../content/20.04.2024 - SESSIÓ/_DSC9928.jpg"
+        alt="Comedor con bóvedas de piedra del siglo XIV, Vincle Cadaqués"
+        width="1920"
+        height="1080"
+        loading="lazy"
+      >
+    </div>
+    <div class="espacio-overlay" aria-hidden="true"></div>
+
+    <div class="espacio-content">
+      <p class="section-index light"><span class="idx-num">05</span><span class="idx-line" aria-hidden="true"></span>El Espacio</p>
+      <h2 class="section-title light">
+        Un interior único,<br>
+        entre la historia<br>
+        <em>y la luz</em>
+      </h2>
+      <p class="espacio-text">Nuestro comedor ocupa una casa histórica del siglo XIV. La bóveda de piedra de 400 años, las paredes del antiguo muro de la ciudad, las vigas de madera y la luz cálida crean un ambiente íntimo donde el tiempo parece detenerse.</p>
+      <ul class="espacio-tags" role="list">
+        <li>Bóveda de piedra · s. XIV</li>
+        <li>Cocina a la vista</li>
+        <li>Terraza exterior</li>
+        <li>Privados para eventos</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       RESERVAR
+  ══════════════════════════════════════ -->
+  <section class="section reservar" id="reservar" aria-label="Reservas">
+
+    <div class="reservar-info">
+
+      <div class="reservar-content">
+        <p class="section-index"><span class="idx-num">06</span><span class="idx-line" aria-hidden="true"></span>Reservas</p>
+        <h2 class="section-title dark">
+          ¿Nos vemos<br>
+          en <em>Cadaqués</em>?
+        </h2>
+        <p class="body-text">Para reservas y consultas, contáctanos directamente. Estaremos encantados de atenderte.</p>
+        <div class="reservar-btns">
+          <a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="btn btn-vi">
+            Reservar mesa online
+            <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a href="tel:+34623213155" class="btn btn-solid-dark">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+              <path d="M2 2.5A.5.5 0 012.5 2H5l1 3L4.5 6.5S5.5 9 7 10.5 10.5 12.5 10.5 12.5L12 11l3 1v2.5a.5.5 0 01-.5.5C6 15 2 9 2 2.5z" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+            +34 623 21 31 55
+          </a>
+          <a href="https://www.instagram.com/restaurantvincle/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+            @restaurantvincle
+            <svg class="btn-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="horarios">
+        <h3 class="horarios-title">
+          Horario
+          <span id="horario-live-badge" class="horario-live" hidden>● Actualizado</span>
+        </h3>
+        <dl class="horarios-list" id="horarios-list">
+          <div class="horario-row">
+            <dt>Miércoles</dt>
+            <span class="horario-sep" aria-hidden="true"></span>
+            <dd>13:00 – 15:30</dd>
+          </div>
+          <div class="horario-row">
+            <dt>Jue – Sáb</dt>
+            <span class="horario-sep" aria-hidden="true"></span>
+            <dd>13:00 – 15:30 · 20:00 – 22:30</dd>
+          </div>
+          <div class="horario-row">
+            <dt>Domingo</dt>
+            <span class="horario-sep" aria-hidden="true"></span>
+            <dd>13:00 – 15:30</dd>
+          </div>
+          <div class="horario-row horario-cerrado">
+            <dt>Lun – Mar</dt>
+            <span class="horario-sep" aria-hidden="true"></span>
+            <dd>Cerrado</dd>
+          </div>
+        </dl>
+        <address class="reservar-address">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M7 12.5C7 12.5 2.5 8.5 2.5 5.5C2.5 3.01 4.51 1 7 1C9.49 1 11.5 3.01 11.5 5.5C11.5 8.5 7 12.5 7 12.5Z" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="7" cy="5.5" r="1.5" stroke="currentColor" stroke-width="1.2"/>
+          </svg>
+          Carrer Vigilant, 8 · 17488 Cadaqués, Girona
+        </address>
+      </div>
+
+    </div>
+
+    <div class="reservar-map-wrap">
+      <div id="vincle-map"></div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+
+    <div class="footer-bigword" aria-hidden="true">Vincle</div>
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="../Logo/LOGO/LOGO-sf.png" alt="Vincle Cadaqués" class="footer-logo-img">
+        </div>
+        <p>Cuina mediterrània al cor<br>del casc antic de Cadaqués</p>
+        <a href="https://www.instagram.com/restaurantvincle/" target="_blank" rel="noopener noreferrer" class="footer-ig" aria-label="Instagram @restaurantvincle">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+          @restaurantvincle
+        </a>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación pie de página">
+        <a href="#restaurante">El Restaurante</a>
+        <a href="#cocina">La Cocina</a>
+        <a href="#vinos">Los Vinos</a>
+        <a href="#equipo">El Equipo</a>
+        <a href="#espacio">El Espacio</a>
+        <a href="#reservar">Reservar</a>
+      </nav>
+      <div class="footer-info">
+        <a href="tel:+34623213155">+34 623 21 31 55</a>
+        <address>
+          Carrer Vigilant, 8<br>
+          17488 Cadaqués, Girona
+        </address>
+        <div class="footer-horario-mini">
+          <span>Mié: 13–15:30</span>
+          <span>Jue–Sáb: 13–15:30 / 20–22:30</span>
+          <span>Dom: 13–15:30</span>
+        </div>
+      </div>
+    </div>
+    <!-- El golden de la puerta: siempre está ahí, también en la web -->
+    <div class="footer-dog" aria-hidden="true">
+      <span class="footer-dog-caption">Bienvenidos al Vincle</span>
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <g class="dog-resting">
+          <!-- Cola -->
+          <path class="dog-tail" d="M136 70 C156 66 169 55 175 42 C179 33 169 30 165 37 C160 46 151 54 141 58 C134 61 133 68 136 70 Z"/>
+          <!-- Cuerpo tumbado -->
+          <path class="dog-body" d="M52 50 C66 40 92 36 112 38 C130 40 142 48 145 58 C148 68 147 78 140 82 L46 84 C42 78 41 70 42 62 C44 55 47 52 52 50 Z"/>
+          <!-- Pata trasera plegada -->
+          <path class="dog-haunch" d="M114 54 C129 54 140 63 140 75 C140 80 135 83 128 82 C118 79 110 64 114 54 Z"/>
+          <!-- Pata delantera lejana -->
+          <path class="dog-leg-far" d="M48 76 L31 76 C26.5 76 26.5 70 31 70 L44 70 C47 70 48.5 72.5 48 76 Z"/>
+          <!-- Pata delantera estirada -->
+          <path class="dog-leg" d="M46 84 L22 84 C16 84 16 77 22 77 L42 77 C45 77 46.5 80 46 84 Z"/>
+          <!-- Cabeza erguida y cuello (solapa el cuerpo) -->
+          <path class="dog-head" d="M10 28 C16 24 24 21 31 20 C34 10 46 5 55 9 C61 12 63 19 62 26 C62 32 62 38 64 44 L66 62 L42 64 C40 52 32 44 22 40 C16 37 11 33 10 28 Z"/>
+          <!-- Oreja caída -->
+          <path class="dog-ear" d="M51 13 C56 11 60 15 60 23 C60 31 56.5 38 52 38 C48.5 38 47 33 47.8 27 C48.5 21 49.5 16.5 51 13 Z"/>
+          <!-- Trufa -->
+          <path class="dog-nose" d="M10 25 C6 25.5 5.5 30 9 31.5 C12 32.5 15 31 15 28.5 C15 26.5 13 25.5 10 25 Z"/>
+          <!-- Sonrisa -->
+          <path class="dog-mouth" d="M12 34 C18 39 25 41 31 40"/>
+          <!-- Lengua fuera -->
+          <path class="dog-tongue" d="M22 40.5 C22.5 46 28 46.5 28.5 41.5 L28 40.5 C26 41.3 24 41.3 22 40.5 Z"/>
+          <!-- Ojo -->
+          <circle class="dog-eye" cx="33" cy="22" r="2.4"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Vincle Cadaqués · Cadaqués, Costa Brava</p>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
+
+  <!-- Google Maps + Places API
+       1. Ve a console.cloud.google.com
+       2. Crea un proyecto → habilita "Maps JavaScript API" y "Places API"
+       3. Crea una API Key y reemplaza YOUR_API_KEY abajo -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFE3Ds9oKEKFIC1U7hHcS7DgbaQjfuT_Q&libraries=places&language=es&callback=initVincleMap">
+  </script>
+
+</body>
+</html>

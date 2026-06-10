@@ -1,0 +1,19 @@
+# Media en bruto (4.8GB+) — no entra en git.
+# Las imágenes finales optimizadas irán a web/assets/ cuando se curen.
+content/*
+!content/*.md
+Recursos web/
+
+# Archivos sueltos no relacionados con la web
+*.pdf
+*.zip
+/IMG_*.JPG
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporales
+*_preview.html
+*_preview.png

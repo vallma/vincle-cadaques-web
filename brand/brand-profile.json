@@ -1,0 +1,77 @@
+{
+  "name": "Vincle Cadaqués",
+  "tagline_ideas": [
+    "El sabor del Mediterráneo en el corazón de Cadaqués",
+    "Donde el mar y la piedra se encuentran",
+    "Cocina de raíz, alma de mar",
+    "Un rincón íntimo entre la historia y el mar"
+  ],
+  "identity": {
+    "type": "Restaurante mediterráneo",
+    "location": {
+      "address": "Carrer Vigilant, 8",
+      "city": "Cadaqués",
+      "province": "Girona",
+      "postal_code": "17488",
+      "country": "España",
+      "coordinates_hint": "Casco antiguo, callejón tranquilo"
+    },
+    "contact": {
+      "phone": "+34 623 21 31 55",
+      "instagram": "https://www.instagram.com/restaurantvincle/"
+    }
+  },
+  "hours": {
+    "monday": "Cerrado",
+    "tuesday": "Cerrado",
+    "wednesday": "13:00-15:30",
+    "thursday": "13:00-15:30, 20:00-22:30",
+    "friday": "13:00-15:30, 20:00-22:30",
+    "saturday": "13:00-15:30, 20:00-22:30",
+    "sunday": "13:00-15:30"
+  },
+  "cuisine": {
+    "type": "Mediterránea",
+    "specialties": [
+      "Arroces y paellas",
+      "Croquetas de gamba roja",
+      "Calamar relleno de butifarra",
+      "Mújol rojo con escabeche",
+      "Mariscos frescos",
+      "Pescado fresco",
+      "Sorbete de tomillo",
+      "Halibut"
+    ],
+    "dietary_options": ["Vegetariano", "Vegano"]
+  },
+  "ambiance": {
+    "style": "Rústico mediterráneo",
+    "features": [
+      "Paredes de piedra expuesta (antiguo muro de la ciudad)",
+      "Bóvedas de piedra",
+      "Techos de vigas de madera",
+      "Mesas de madera",
+      "Iluminación cálida y suave",
+      "Vistas a la cocina abierta",
+      "Terraza exterior",
+      "Interior acogedor"
+    ],
+    "mood": "Íntimo, acogedor, auténtico, mediterráneo"
+  },
+  "ratings": {
+    "overall": 4.7,
+    "review_count": 220,
+    "ranking": "#31 de 141 restaurantes en Cadaqués"
+  },
+  "visual_direction": {
+    "palette_hints": [
+      "Blanco encalado de Cadaqués",
+      "Azul mediterráneo del mar",
+      "Ocre y beige de la piedra",
+      "Verde oliva y hierbas mediterráneas",
+      "Madera natural cálida"
+    ],
+    "photography_style": "Natural, luz cálida, íntimo, artesanal",
+    "typography_feel": "Elegante pero accesible, con carácter mediterráneo"
+  }
+}
