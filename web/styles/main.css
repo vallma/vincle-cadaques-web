@@ -1306,6 +1306,20 @@ address { font-style: normal; }
   color: rgba(201, 187, 167, 0.4);
 }
 
+.footer-credit {
+  margin-top: 0.35rem;
+}
+.footer-credit a {
+  color: rgba(201, 187, 167, 0.6);
+  border-bottom: 1px solid rgba(201, 187, 167, 0.25);
+  padding-bottom: 1px;
+  transition: color 0.25s, border-color 0.25s;
+}
+.footer-credit a:hover {
+  color: var(--cream);
+  border-color: var(--fusta);
+}
+
 /* ═══════════════════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════════════════ */
