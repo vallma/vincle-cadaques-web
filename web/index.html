@@ -38,6 +38,8 @@
       <li><a href="#cocina">La Cocina</a></li>
       <li><a href="#vinos">Los Vinos</a></li>
       <li><a href="#espacio">El Espacio</a></li>
+      <li><a href="#historia">La Muralla</a></li>
+      <li><a href="#eventos">Eventos</a></li>
       <li><a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="nav-cta">Reservar</a></li>
     </ul>
   </nav>
@@ -347,8 +349,168 @@
         <li>Bóveda de piedra · s. XIV</li>
         <li>Cocina a la vista</li>
         <li>Terraza exterior</li>
-        <li>Privados para eventos</li>
+        <li><a href="#eventos">Privados para eventos →</a></li>
       </ul>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       LA MURALLA (Historia — grabado 1655)
+  ══════════════════════════════════════ -->
+  <section class="section historia" id="historia" aria-label="La Muralla">
+
+    <div class="historia-body">
+      <p class="section-index"><span class="idx-num">06</span><span class="idx-line" aria-hidden="true"></span>La Muralla</p>
+      <h2 class="section-title dark">
+        Tres siglos antes,<br>
+        ya estábamos<br>
+        <em>en el mapa</em>
+      </h2>
+      <p class="body-text">Este grabado de Sébastien de Beaulieu (1655) muestra la villa amurallada de Cadaqués —"Cap de Quiers"— durante el sitio de las tropas de Luis XIV. Las piedras de aquella muralla son hoy las paredes de nuestro comedor.</p>
+      <p class="body-text">El pin señala dónde está Vincle: dentro del trazado original de la muralla, en el corazón del casco antiguo.</p>
+    </div>
+
+    <div class="historia-media">
+      <figure class="mapa-frame">
+        <div class="mapa-wrap" id="mapaWrap">
+          <img src="assets/images/mapa-muralla.jpg" onerror="this.onerror=null;this.src='../assets/images/mapa-muralla.jpeg';" alt="Grabado de 1655: plano de la villa amurallada de Cadaqués (Cap de Quiers), por Sébastien de Beaulieu" width="700" height="497" loading="lazy">
+          <button class="mapa-pin" id="mapaPin" style="left: 44.3%; top: 53.3%;" aria-label="Ubicación de Vincle en el plano histórico">
+            <span class="mapa-pin-dot" aria-hidden="true"></span>
+            <span class="mapa-pin-label">Vincle</span>
+          </button>
+        </div>
+        <figcaption class="mapa-caption">Plan de la Ville de Cap de Quiers en Catalogne · S. de Beaulieu, 1655 · BnF</figcaption>
+      </figure>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EVENTOS PRIVADOS & TRABAJA CON NOSOTROS
+  ══════════════════════════════════════ -->
+  <section class="section contacto" id="eventos" aria-label="Eventos privados y empleo">
+
+    <div class="contacto-header">
+      <p class="section-index"><span class="idx-num">07</span><span class="idx-line" aria-hidden="true"></span>Hablemos</p>
+      <h2 class="section-title dark">
+        Celebra o<br>
+        <em>únete</em> a Vincle
+      </h2>
+    </div>
+
+    <div class="contacto-tabs" role="tablist" aria-label="Formularios de contacto">
+      <button class="contacto-tab active" id="tabEventos" role="tab" aria-selected="true" aria-controls="formEventosPanel">Eventos privados</button>
+      <button class="contacto-tab" id="tabTrabajo" role="tab" aria-selected="false" aria-controls="formTrabajoPanel">Trabaja con nosotros</button>
+    </div>
+
+    <!-- ── Eventos privados ── -->
+    <div class="contacto-panel" id="formEventosPanel" role="tabpanel" aria-labelledby="tabEventos">
+      <p class="body-text contacto-intro">Comidas de empresa, celebraciones familiares, grupos… Nuestro comedor abovedado y la terraza se adaptan a tu evento. Cuéntanos qué tienes en mente.</p>
+      <form class="vincle-form" id="formEventos" novalidate>
+        <input type="hidden" name="_subject" value="Web Vincle — Solicitud de evento privado">
+        <div class="form-grid">
+          <label class="form-field">
+            <span>Nombre *</span>
+            <input type="text" name="nombre" required autocomplete="name">
+          </label>
+          <label class="form-field">
+            <span>Email *</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label class="form-field">
+            <span>Teléfono</span>
+            <input type="tel" name="telefono" autocomplete="tel">
+          </label>
+          <label class="form-field">
+            <span>Fecha deseada</span>
+            <input type="date" name="fecha">
+          </label>
+          <label class="form-field">
+            <span>Nº de invitados</span>
+            <input type="number" name="invitados" min="2" max="200" placeholder="p. ej. 25">
+          </label>
+          <label class="form-field">
+            <span>Tipo de evento</span>
+            <select name="tipo_evento">
+              <option value="">Selecciona…</option>
+              <option>Comida / cena de empresa</option>
+              <option>Celebración familiar</option>
+              <option>Boda / pedida</option>
+              <option>Grupo grande</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label class="form-field form-field-full">
+            <span>Cuéntanos más</span>
+            <textarea name="mensaje" rows="4" placeholder="Horario, menú, alergias, presupuesto orientativo…"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-vi form-submit">
+          Enviar solicitud
+          <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <!-- ── Trabaja con nosotros ── -->
+    <div class="contacto-panel" id="formTrabajoPanel" role="tabpanel" aria-labelledby="tabTrabajo" hidden>
+      <p class="body-text contacto-intro">Buscamos personas con ganas, respeto por el producto y amor por la hostelería. Si te ves en nuestra cocina o en nuestra sala, escríbenos.</p>
+      <form class="vincle-form" id="formTrabajo" novalidate>
+        <input type="hidden" name="_subject" value="Web Vincle — Candidatura: trabaja con nosotros">
+        <div class="form-grid">
+          <label class="form-field">
+            <span>Nombre *</span>
+            <input type="text" name="nombre" required autocomplete="name">
+          </label>
+          <label class="form-field">
+            <span>Email *</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label class="form-field">
+            <span>Teléfono</span>
+            <input type="tel" name="telefono" autocomplete="tel">
+          </label>
+          <label class="form-field">
+            <span>Puesto *</span>
+            <select name="puesto" required>
+              <option value="">Selecciona…</option>
+              <option>Cocina</option>
+              <option>Sala</option>
+              <option>Barra</option>
+              <option>Prácticas / stage</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span>Disponibilidad</span>
+            <select name="disponibilidad">
+              <option value="">Selecciona…</option>
+              <option>Inmediata</option>
+              <option>Temporada de verano</option>
+              <option>A convenir</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span>Enlace a CV / LinkedIn</span>
+            <input type="url" name="cv_enlace" placeholder="https://…">
+          </label>
+          <label class="form-field form-field-full">
+            <span>Preséntate *</span>
+            <textarea name="mensaje" rows="4" required placeholder="Experiencia, motivación, lo que te hace especial…"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-vi form-submit">
+          Enviar candidatura
+          <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
 
   </section>
@@ -361,7 +523,7 @@
     <div class="reservar-info">
 
       <div class="reservar-content">
-        <p class="section-index"><span class="idx-num">06</span><span class="idx-line" aria-hidden="true"></span>Reservas</p>
+        <p class="section-index"><span class="idx-num">08</span><span class="idx-line" aria-hidden="true"></span>Reservas</p>
         <h2 class="section-title dark">
           ¿Nos vemos<br>
           en <em>Cadaqués</em>?
@@ -461,6 +623,9 @@
         <a href="#vinos">Los Vinos</a>
         <a href="#equipo">El Equipo</a>
         <a href="#espacio">El Espacio</a>
+        <a href="#historia">La Muralla</a>
+        <a href="#eventos">Eventos privados</a>
+        <a href="#eventos">Trabaja con nosotros</a>
         <a href="#reservar">Reservar</a>
       </nav>
       <div class="footer-info">
@@ -478,11 +643,11 @@
     </div>
     <!-- El golden de la puerta: siempre está ahí, también en la web -->
     <div class="footer-dog" aria-hidden="true">
-      <span class="footer-dog-caption">Bienvenidos al Vincle</span>
-      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <span class="footer-dog-caption">Dashi te da la bienvenida al Vincle</span>
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Golden retriever tumbado dando la bienvenida">
         <g class="dog-resting">
-          <!-- Cola -->
-          <path class="dog-tail" d="M136 70 C156 66 169 55 175 42 C179 33 169 30 165 37 C160 46 151 54 141 58 C134 61 133 68 136 70 Z"/>
+          <!-- Cola en pluma, levantada -->
+          <path class="dog-tail" d="M129 72 C144 70 157 62 165 50 C170 43 173 35 174 27 C166 34 159 42 154 50 C149 58 141 65 132 68 C127 70 126 71 129 72 Z"/>
           <!-- Cuerpo tumbado -->
           <path class="dog-body" d="M52 50 C66 40 92 36 112 38 C130 40 142 48 145 58 C148 68 147 78 140 82 L46 84 C42 78 41 70 42 62 C44 55 47 52 52 50 Z"/>
           <!-- Pata trasera plegada -->
@@ -493,8 +658,12 @@
           <path class="dog-leg" d="M46 84 L22 84 C16 84 16 77 22 77 L42 77 C45 77 46.5 80 46 84 Z"/>
           <!-- Cabeza erguida y cuello (solapa el cuerpo) -->
           <path class="dog-head" d="M10 28 C16 24 24 21 31 20 C34 10 46 5 55 9 C61 12 63 19 62 26 C62 32 62 38 64 44 L66 62 L42 64 C40 52 32 44 22 40 C16 37 11 33 10 28 Z"/>
-          <!-- Oreja caída -->
-          <path class="dog-ear" d="M51 13 C56 11 60 15 60 23 C60 31 56.5 38 52 38 C48.5 38 47 33 47.8 27 C48.5 21 49.5 16.5 51 13 Z"/>
+          <!-- Pecho claro, típico del golden -->
+          <path class="dog-chest" d="M58 47 C64 51 67 58 66 66 C65 73 62 79 58 82 C53 78 50 70 51 61 C52 54 54 50 58 47 Z"/>
+          <!-- Collar granate Vincle -->
+          <path class="dog-collar" d="M44 56 C50 51 57 48 64 48 L64 54 C58 54 51 56 46 61 Z"/>
+          <!-- Oreja caída larga -->
+          <path class="dog-ear" d="M50 12 C57 10 62 15 62 24 C62 33 59 41 53 44 C51 44.5 49.5 43 49.5 40 C48 41 46.5 40.5 46.5 38 C46.8 29 47.8 18 50 12 Z"/>
           <!-- Trufa -->
           <path class="dog-nose" d="M10 25 C6 25.5 5.5 30 9 31.5 C12 32.5 15 31 15 28.5 C15 26.5 13 25.5 10 25 Z"/>
           <!-- Sonrisa -->

@@ -1220,23 +1220,25 @@ address { font-style: normal; }
 }
 
 .footer-dog svg {
-  width: 124px;
+  width: 132px;
   height: auto;
-  color: var(--fusta);
+  color: #e6cb94;
   fill: currentColor;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: opacity 0.4s var(--ease-out), color 0.4s var(--ease-out);
 }
 
 .footer-dog:hover svg {
   opacity: 1;
-  color: #d4a368;
+  color: #f0d9a8;
 }
 
-/* Rasgos del golden */
-.dog-ear     { fill: var(--fusta-deep); }
-.dog-haunch  { fill: var(--fusta-deep); opacity: 0.4; }
-.dog-leg-far { fill: var(--fusta-deep); opacity: 0.55; }
+/* Rasgos de Dashi, golden rubita */
+.dog-ear     { fill: #c9a767; }
+.dog-haunch  { fill: #c9a767; opacity: 0.5; }
+.dog-leg-far { fill: #c9a767; opacity: 0.6; }
+.dog-chest   { fill: #f6ecd2; opacity: 0.9; }
+.dog-collar  { fill: var(--vi-light); }
 .dog-nose,
 .dog-eye     { fill: #241a12; }
 .dog-mouth {
@@ -1259,7 +1261,7 @@ address { font-style: normal; }
 }
 
 .dog-tail {
-  transform-origin: 137px 65px;
+  transform-origin: 130px 70px;
   animation: tailWag 8s ease-in-out infinite;
 }
 
@@ -1321,6 +1323,196 @@ address { font-style: normal; }
 }
 
 /* ═══════════════════════════════════════════════════════
+   LA MURALLA — grabado histórico + pin
+   ═══════════════════════════════════════════════════════ */
+.historia {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) 1.3fr;
+  gap: var(--gap);
+  align-items: center;
+  background: var(--paper-deep);
+}
+
+.mapa-frame {
+  position: relative;
+  margin: 0;
+}
+
+.mapa-wrap {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(22, 19, 16, 0.18);
+  box-shadow: 0 24px 60px -24px rgba(22, 19, 16, 0.45);
+  background: #e7dcc3;
+}
+
+.mapa-wrap img {
+  width: 100%;
+  height: auto;
+  filter: sepia(0.18) contrast(1.04);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.mapa-caption {
+  margin-top: 0.9rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* Pin */
+.mapa-pin {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  background: none;
+  border: none;
+  cursor: default;
+  padding: 0;
+  z-index: 3;
+}
+
+.mapa-pin-label {
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--cream);
+  background: var(--vi-mid);
+  border: 1px solid rgba(243, 238, 227, 0.35);
+  border-radius: 999px;
+  padding: 0.28rem 0.85rem;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px -6px rgba(22, 19, 16, 0.55);
+}
+
+.mapa-pin-dot {
+  order: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--vi-mid);
+  border: 2px solid var(--cream);
+  box-shadow: 0 0 0 0 rgba(92, 20, 34, 0.5);
+  animation: pinPulse 2.4s ease-out infinite;
+}
+
+@keyframes pinPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(92, 20, 34, 0.45); }
+  70%  { box-shadow: 0 0 0 14px rgba(92, 20, 34, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(92, 20, 34, 0); }
+}
+
+/* ═══════════════════════════════════════════════════════
+   CONTACTO — eventos privados & trabaja con nosotros
+   ═══════════════════════════════════════════════════════ */
+.contacto {
+  background: var(--paper);
+  max-width: 100%;
+}
+
+.contacto-header { margin-bottom: 3rem; }
+
+.contacto-tabs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.contacto-tab {
+  font-family: var(--ff-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 19, 16, 0.3);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.3s var(--ease-out), color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+}
+
+.contacto-tab.active,
+.contacto-tab:hover {
+  background: var(--vi);
+  border-color: var(--vi);
+  color: var(--cream);
+}
+
+.contacto-panel { max-width: 760px; }
+.contacto-intro { margin-bottom: 2rem; }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-field-full { grid-column: 1 / -1; }
+
+.form-field span {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  font-family: var(--ff-body);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(22, 19, 16, 0.3);
+  padding: 0.55rem 0.1rem;
+  border-radius: 0;
+  transition: border-color 0.3s var(--ease-out);
+}
+
+.form-field textarea { resize: vertical; }
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-bottom-color: var(--vi);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(92, 85, 74, 0.5);
+}
+
+.form-status {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  min-height: 1.4em;
+}
+.form-status.ok    { color: #2e6b3a; }
+.form-status.error { color: var(--vi-light); }
+
+.form-submit[disabled] { opacity: 0.55; pointer-events: none; }
+
+/* ═══════════════════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════════════════ */
 @media (max-width: 1100px) {
@@ -1329,6 +1521,10 @@ address { font-style: normal; }
 }
 
 @media (max-width: 900px) {
+  .historia { grid-template-columns: 1fr; }
+  .historia-media { margin-top: 2.5rem; }
+  .form-grid { grid-template-columns: 1fr; }
+
   .restaurante,
   .equipo,
   .reservar {

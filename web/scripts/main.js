@@ -167,6 +167,86 @@ gsap.from('.espacio-tags li', {
 });
 
 // ─────────────────────────────────────────
+// LA MURALLA — scroll animations
+// ─────────────────────────────────────────
+reveal('.historia-body .section-index', '.historia-body', { y: 20 });
+reveal('.historia-body .section-title', '.historia-body', { y: 35, delay: 0.1 });
+reveal('.historia-body .body-text',     '.historia-body', { y: 24, stagger: 0.15, delay: 0.2 });
+reveal('.mapa-frame',                   '.historia-media', { y: 40 });
+
+// ─────────────────────────────────────────
+// LA MURALLA — pin fijado (left: 44.3% / top: 53.3% en el HTML)
+// Limpieza del ajuste temporal guardado en localStorage
+// ─────────────────────────────────────────
+localStorage.removeItem('vincle-pin');
+
+// ─────────────────────────────────────────
+// CONTACTO — tabs + envío de formularios (FormSubmit AJAX)
+// ─────────────────────────────────────────
+reveal('.contacto-header .section-index', '.contacto-header', { y: 20 });
+reveal('.contacto-header .section-title', '.contacto-header', { y: 35, delay: 0.1 });
+reveal('.contacto-tabs',                  '.contacto-tabs',   { y: 20, start: 'top 90%' });
+
+const FORM_EMAIL = 'adriavallma@gmail.com'; // ← cambiar por el email del restaurante
+
+const tabs = [
+  { tab: document.getElementById('tabEventos'), panel: document.getElementById('formEventosPanel') },
+  { tab: document.getElementById('tabTrabajo'), panel: document.getElementById('formTrabajoPanel') },
+];
+
+tabs.forEach(({ tab, panel }) => {
+  tab?.addEventListener('click', () => {
+    tabs.forEach(({ tab: t, panel: p }) => {
+      const active = t === tab;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', String(active));
+      p.hidden = !active;
+    });
+  });
+});
+
+function bindForm(formId) {
+  const form = document.getElementById(formId);
+  if (!form) return;
+  const status = form.querySelector('.form-status');
+  const submitBtn = form.querySelector('.form-submit');
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    submitBtn.setAttribute('disabled', '');
+    status.textContent = 'Enviando…';
+    status.className = 'form-status';
+
+    try {
+      const data = Object.fromEntries(new FormData(form).entries());
+      const res = await fetch(`https://formsubmit.co/ajax/${FORM_EMAIL}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error('Respuesta no válida');
+      form.reset();
+      status.textContent = '¡Recibido! Te responderemos muy pronto. Gracias.';
+      status.className = 'form-status ok';
+    } catch (err) {
+      status.textContent = 'No se pudo enviar. Llámanos al +34 623 21 31 55 o escríbenos por Instagram.';
+      status.className = 'form-status error';
+    } finally {
+      submitBtn.removeAttribute('disabled');
+    }
+  });
+}
+
+bindForm('formEventos');
+bindForm('formTrabajo');
+
+// ─────────────────────────────────────────
 // RESERVAR — scroll animations
 // ─────────────────────────────────────────
 reveal('.reservar-content .section-index', '.reservar-content', { y: 20 });
