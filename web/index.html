@@ -34,13 +34,27 @@
       <span></span>
     </button>
     <ul class="nav-links" id="navLinks" role="list">
-      <li><a href="#restaurante">El Restaurante</a></li>
-      <li><a href="#cocina">La Cocina</a></li>
-      <li><a href="#vinos">Los Vinos</a></li>
-      <li><a href="#espacio">El Espacio</a></li>
-      <li><a href="#historia">La Muralla</a></li>
-      <li><a href="#eventos">Eventos</a></li>
-      <li><a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="nav-cta">Reservar</a></li>
+      <li><a href="#restaurante" data-i18n="nav.rest">El Restaurante</a></li>
+      <li><a href="#cocina" data-i18n="nav.cocina">La Cocina</a></li>
+      <li><a href="#vinos" data-i18n="nav.vinos">Los Vinos</a></li>
+      <li><a href="#espacio" data-i18n="nav.espacio">El Espacio</a></li>
+      <li><a href="#historia" data-i18n="nav.muralla">La Muralla</a></li>
+      <li><a href="#eventos" data-i18n="nav.eventos">Eventos</a></li>
+      <li><a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav.reservar">Reservar</a></li>
+      <li class="nav-lang" role="group" aria-label="Idioma">
+        <button class="lang-btn" data-lang="es" aria-label="Español" title="Español">
+          <svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg>
+        </button>
+        <button class="lang-btn" data-lang="ca" aria-label="Català" title="Català">
+          <svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#fcdd09"/><g fill="#da121a"><rect y="1.6" width="20" height="1.55"/><rect y="4.7" width="20" height="1.55"/><rect y="7.8" width="20" height="1.55"/><rect y="10.9" width="20" height="1.55"/></g></svg>
+        </button>
+        <button class="lang-btn" data-lang="en" aria-label="English" title="English">
+          <svg viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#012169"/><path d="M0 0L20 14M20 0L0 14" stroke="#fff" stroke-width="2.8"/><path d="M0 0L20 14M20 0L0 14" stroke="#C8102E" stroke-width="1.2"/><rect x="8.4" width="3.2" height="14" fill="#fff"/><rect y="5.4" width="20" height="3.2" fill="#fff"/><rect x="9.1" width="1.8" height="14" fill="#C8102E"/><rect y="6.1" width="20" height="1.8" fill="#C8102E"/></svg>
+        </button>
+        <button class="lang-btn" data-lang="fr" aria-label="Français" title="Français">
+          <svg viewBox="0 0 20 14" aria-hidden="true"><rect width="6.67" height="14" fill="#002395"/><rect x="6.67" width="6.66" height="14" fill="#fff"/><rect x="13.33" width="6.67" height="14" fill="#ED2939"/></svg>
+        </button>
+      </li>
     </ul>
   </nav>
 
@@ -73,15 +87,15 @@
         <span class="hero-word">Vincle</span>
         <em class="hero-word">Cadaqués</em>
       </h1>
-      <p class="hero-sub">Entre las piedras de la antigua muralla y la luz del Mediterráneo, Vincle ofrece una experiencia gastronómica donde el producto, la temporada y el respeto por la tradición son los protagonistas.</p>
+      <p class="hero-sub" data-i18n="hero.sub">Entre las piedras de la antigua muralla y la luz del Mediterráneo, Vincle ofrece una experiencia gastronómica donde el producto, la temporada y el respeto por la tradición son los protagonistas.</p>
       <div class="hero-actions">
         <a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="btn btn-solid-light">
-          Reservar mesa
+          <span data-i18n="hero.cta1">Reservar mesa</span>
           <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
             <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </a>
-        <a href="#cocina" class="btn btn-ghost-light">Ver la carta</a>
+        <a href="#cocina" class="btn btn-ghost-light" data-i18n="hero.cta2">Ver la carta</a>
       </div>
     </div>
 
@@ -93,18 +107,18 @@
     <!-- Marquee strip -->
     <div class="hero-marquee marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>Cuina mediterrània</span>
+        <span data-i18n="marq.1">Cuina mediterrània</span>
         <span>Cadaqués</span>
-        <span>Producto de temporada</span>
+        <span data-i18n="marq.3">Producto de temporada</span>
         <span>Costa Brava</span>
-        <span>Arroces &amp; mariscos</span>
-        <span>Bóvedas del s. XIV</span>
-        <span>Cuina mediterrània</span>
+        <span data-i18n="marq.5">Arroces &amp; mariscos</span>
+        <span data-i18n="marq.6">Bóvedas del s. XIV</span>
+        <span data-i18n="marq.1">Cuina mediterrània</span>
         <span>Cadaqués</span>
-        <span>Producto de temporada</span>
+        <span data-i18n="marq.3">Producto de temporada</span>
         <span>Costa Brava</span>
-        <span>Arroces &amp; mariscos</span>
-        <span>Bóvedas del s. XIV</span>
+        <span data-i18n="marq.5">Arroces &amp; mariscos</span>
+        <span data-i18n="marq.6">Bóvedas del s. XIV</span>
       </div>
     </div>
 
@@ -133,14 +147,14 @@
     </div>
 
     <div class="restaurante-body">
-      <p class="section-index"><span class="idx-num">01</span><span class="idx-line" aria-hidden="true"></span>El Restaurante</p>
-      <h2 class="section-title dark">
+      <p class="section-index"><span class="idx-num">01</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.rest">El Restaurante</span></p>
+      <h2 class="section-title dark" data-i18n="rest.title">
         Donde la piedra<br>
         y el mar<br>
         <em>se unen</em>
       </h2>
-      <p class="body-text">Escondido en un tranquilo callejón del casco antiguo de Cadaqués, Vincle nace entre las paredes de la antigua muralla. Un restaurante donde la piedra centenaria, la luz del Mediterráneo y una cocina de producto conviven en perfecta armonía.</p>
-      <p class="body-text">Dirigido por el chef <strong>Alexandre Vehí</strong> y la sumiller <strong>Mónica Font</strong>, Vincle ofrece una experiencia gastronómica basada en el respeto al producto, la memoria culinaria y una mirada contemporánea. Un lugar donde comer en Cadaqués significa descubrir el territorio a través de cada plato.</p>
+      <p class="body-text" data-i18n="rest.p1">Escondido en un tranquilo callejón del casco antiguo de Cadaqués, Vincle nace entre las paredes de la antigua muralla. Un restaurante donde la piedra centenaria, la luz del Mediterráneo y una cocina de producto conviven en perfecta armonía.</p>
+      <p class="body-text" data-i18n="rest.p2">Dirigido por el chef <strong>Alexandre Vehí</strong> y la sumiller <strong>Mónica Font</strong>, Vincle ofrece una experiencia gastronómica basada en el respeto al producto, la memoria culinaria y una mirada contemporánea. Un lugar donde comer en Cadaqués significa descubrir el territorio a través de cada plato.</p>
 
       <div class="restaurante-quote">
         <blockquote>
@@ -150,16 +164,16 @@
 
       <!-- ── Un nombre con significado ── -->
       <div class="significado" id="significado">
-        <h3 class="significado-title">¿Significado de <em>Vincle</em>?</h3>
-        <p class="body-text"><em>Vincle</em> es una palabra en catalán, significa <strong>vínculo</strong>.</p>
+        <h3 class="significado-title" data-i18n="sig.title">¿Significado de <em>Vincle</em>?</h3>
+        <p class="body-text" data-i18n="sig.intro"><em>Vincle</em> es una palabra en catalán, significa <strong>vínculo</strong>.</p>
         <ul class="significado-list" role="list">
-          <li>El vínculo con <strong>Cadaqués</strong>, donde nace nuestro proyecto y nuestro chef Alexandre.</li>
-          <li>El vínculo con el <strong>Mediterráneo</strong> y el producto que nos inspira cada día.</li>
-          <li>El vínculo entre la <strong>cocina y el vino</strong>, dos lenguajes que se complementan.</li>
-          <li>El vínculo con los <strong>productores</strong> que hacen posible cada servicio.</li>
-          <li>Y, sobre todo, el vínculo que se crea alrededor de una <strong>mesa</strong>, compartiendo tiempo, conversación y gastronomía.</li>
+          <li data-i18n="sig.li1">El vínculo con <strong>Cadaqués</strong>, donde nace nuestro proyecto y nuestro chef Alexandre.</li>
+          <li data-i18n="sig.li2">El vínculo con el <strong>Mediterráneo</strong> y el producto que nos inspira cada día.</li>
+          <li data-i18n="sig.li3">El vínculo entre la <strong>cocina y el vino</strong>, dos lenguajes que se complementan.</li>
+          <li data-i18n="sig.li4">El vínculo con los <strong>productores</strong> que hacen posible cada servicio.</li>
+          <li data-i18n="sig.li5">Y, sobre todo, el vínculo que se crea alrededor de una <strong>mesa</strong>, compartiendo tiempo, conversación y gastronomía.</li>
         </ul>
-        <p class="body-text significado-cierre">Ese es el espíritu que da nombre a nuestro restaurante.</p>
+        <p class="body-text significado-cierre" data-i18n="sig.cierre">Ese es el espíritu que da nombre a nuestro restaurante.</p>
       </div>
 
       <div class="testimonios" id="testimonios" aria-label="Reseñas de clientes"></div>
@@ -173,13 +187,13 @@
   <section class="cocina" id="cocina" aria-label="La Cocina">
 
     <div class="cocina-header">
-      <p class="section-index light"><span class="idx-num">02</span><span class="idx-line" aria-hidden="true"></span>La Cocina</p>
-      <h2 class="section-title light">
+      <p class="section-index light"><span class="idx-num">02</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.cocina">La Cocina</span></p>
+      <h2 class="section-title light" data-i18n="coc.title">
         El sabor del<br>
         <em>Mediterráneo</em>
       </h2>
-      <p class="cocina-sub">La cocina de Vincle cambia con el ritmo de las estaciones. Trabajamos con productos seleccionados en su mejor momento para ofrecer una propuesta profundamente mediterránea, ligada al entorno de Cadaqués y al respeto por cada ingrediente.</p>
-      <p class="cocina-sub">Entre la memoria de las recetas de siempre y una mirada contemporánea, cada plato nace del equilibrio entre tradición, técnica y sensibilidad. Una cocina honesta, donde el producto marca el camino y cada elaboración tiene un propósito.</p>
+      <p class="cocina-sub" data-i18n="coc.sub1">La cocina de Vincle cambia con el ritmo de las estaciones. Trabajamos con productos seleccionados en su mejor momento para ofrecer una propuesta profundamente mediterránea, ligada al entorno de Cadaqués y al respeto por cada ingrediente.</p>
+      <p class="cocina-sub" data-i18n="coc.sub2">Entre la memoria de las recetas de siempre y una mirada contemporánea, cada plato nace del equilibrio entre tradición, técnica y sensibilidad. Una cocina honesta, donde el producto marca el camino y cada elaboración tiene un propósito.</p>
     </div>
 
     <div class="dishes" role="list">
@@ -191,7 +205,7 @@
         </div>
         <div class="dish-info">
           <h3 class="dish-name">Rossinyols amb Polsim de Foie</h3>
-          <p class="dish-desc">Plato icónico: morels con salsa de la abuela y polvo frío de foie de Paco Pérez</p>
+          <p class="dish-desc" data-i18n="dish.1">Plato icónico: morels con salsa de la abuela y polvo frío de foie de Paco Pérez</p>
         </div>
       </article>
 
@@ -202,7 +216,7 @@
         </div>
         <div class="dish-info">
           <h3 class="dish-name">Croquetes de Gamba Roja</h3>
-          <p class="dish-desc">Gamba roja de la Costa Brava, bechamel artesanal</p>
+          <p class="dish-desc" data-i18n="dish.2">Gamba roja de la Costa Brava, bechamel artesanal</p>
         </div>
       </article>
 
@@ -213,7 +227,7 @@
         </div>
         <div class="dish-info">
           <h3 class="dish-name">Arròs de Temporada</h3>
-          <p class="dish-desc">Arroz de mercado con los mejores productos de temporada</p>
+          <p class="dish-desc" data-i18n="dish.3">Arroz de mercado con los mejores productos de temporada</p>
         </div>
       </article>
 
@@ -224,7 +238,7 @@
         </div>
         <div class="dish-info">
           <h3 class="dish-name">Tartar de Tonyina</h3>
-          <p class="dish-desc">Atún rojo fresco, vinagreta cítrica y flores del Cap de Creus</p>
+          <p class="dish-desc" data-i18n="dish.4">Atún rojo fresco, vinagreta cítrica y flores del Cap de Creus</p>
         </div>
       </article>
 
@@ -232,7 +246,7 @@
 
     <div class="cocina-footer">
       <a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="btn btn-solid-light">
-        Reservar mesa
+        <span data-i18n="hero.cta1">Reservar mesa</span>
         <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
           <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
@@ -249,13 +263,13 @@
     <div class="vinos-bigword" aria-hidden="true">Salut</div>
 
     <div class="vinos-header">
-      <p class="section-index light"><span class="idx-num">03</span><span class="idx-line" aria-hidden="true"></span>Los Vinos</p>
-      <h2 class="section-title light">
+      <p class="section-index light"><span class="idx-num">03</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.vinos">Los Vinos</span></p>
+      <h2 class="section-title light" data-i18n="vin.title">
         Una bodega<br>
         <em>de autor</em>
       </h2>
-      <p class="vinos-sub">El vino forma parte de la experiencia en Vincle. Nuestra selección nace con la misma filosofía que nuestra cocina: respeto por el producto, el territorio y las personas que hay detrás de cada botella.</p>
-      <p class="vinos-sub">Ofrecemos una carta para descubrir nuevas referencias, tanto para quien busca un clásico como para quien disfruta dejándose sorprender.</p>
+      <p class="vinos-sub" data-i18n="vin.sub1">El vino forma parte de la experiencia en Vincle. Nuestra selección nace con la misma filosofía que nuestra cocina: respeto por el producto, el territorio y las personas que hay detrás de cada botella.</p>
+      <p class="vinos-sub" data-i18n="vin.sub2">Ofrecemos una carta para descubrir nuevas referencias, tanto para quien busca un clásico como para quien disfruta dejándose sorprender.</p>
     </div>
 
     <div class="vinos-gallery">
@@ -300,8 +314,8 @@
   ══════════════════════════════════════ -->
   <section class="section equipo" id="equipo" aria-label="El Equipo">
     <div class="equipo-content">
-      <p class="section-index"><span class="idx-num">04</span><span class="idx-line" aria-hidden="true"></span>El Equipo</p>
-      <h2 class="section-title dark">
+      <p class="section-index"><span class="idx-num">04</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.equipo">El Equipo</span></p>
+      <h2 class="section-title dark" data-i18n="eq.title">
         Dos visiones,<br>
         una <em>experiencia</em>
       </h2>
@@ -309,12 +323,12 @@
         <div class="equipo-persona">
           <div class="equipo-rol">Chef</div>
           <h3 class="equipo-nombre">Alexandre Vehí</h3>
-          <p class="equipo-bio">Cadaquesenc, formado en la cocina de Paco Pérez. Cocina de raíz con técnica contemporánea, inspirada en los sabores de la infancia y el producto del Mediterráneo.</p>
+          <p class="equipo-bio" data-i18n="eq.bio1">Cadaquesenc, formado en la cocina de Paco Pérez. Cocina de raíz con técnica contemporánea, inspirada en los sabores de la infancia y el producto del Mediterráneo.</p>
         </div>
         <div class="equipo-persona">
-          <div class="equipo-rol">Sala &amp; Vinos</div>
+          <div class="equipo-rol" data-i18n="eq.rol2">Sala &amp; Vinos</div>
           <h3 class="equipo-nombre">Mónica Font</h3>
-          <p class="equipo-bio">Sumiller y directora de sala. Formada con los hermanos Roca en El Celler de Can Roca. Su presencia convierte cada cena en una experiencia completa.</p>
+          <p class="equipo-bio" data-i18n="eq.bio2">Sumiller y directora de sala. Formada con los hermanos Roca en El Celler de Can Roca. Su presencia convierte cada cena en una experiencia completa.</p>
         </div>
       </div>
     </div>
@@ -355,18 +369,18 @@
     <div class="espacio-overlay" aria-hidden="true"></div>
 
     <div class="espacio-content">
-      <p class="section-index light"><span class="idx-num">05</span><span class="idx-line" aria-hidden="true"></span>El Espacio</p>
-      <h2 class="section-title light">
+      <p class="section-index light"><span class="idx-num">05</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.espacio">El Espacio</span></p>
+      <h2 class="section-title light" data-i18n="esp.title">
         Un interior único,<br>
         entre la historia<br>
         <em>y la luz</em>
       </h2>
-      <p class="espacio-text">Nuestro comedor ocupa una casa histórica del siglo XIV. La bóveda de piedra de 400 años, las paredes del antiguo muro de la ciudad, las vigas de madera y la luz cálida crean un ambiente íntimo donde el tiempo parece detenerse.</p>
+      <p class="espacio-text" data-i18n="esp.text">Nuestro comedor ocupa una casa histórica del siglo XIV. La bóveda de piedra de 400 años, las paredes del antiguo muro de la ciudad, las vigas de madera y la luz cálida crean un ambiente íntimo donde el tiempo parece detenerse.</p>
       <ul class="espacio-tags" role="list">
-        <li>Bóveda de piedra · s. XIV</li>
-        <li>Cocina a la vista</li>
-        <li>Terraza exterior</li>
-        <li><a href="#eventos">Privados para eventos →</a></li>
+        <li data-i18n="esp.tag1">Bóveda de piedra · s. XIV</li>
+        <li data-i18n="esp.tag2">Cocina a la vista</li>
+        <li data-i18n="esp.tag3">Terraza exterior</li>
+        <li><a href="#eventos" data-i18n="esp.tag4">Privados para eventos →</a></li>
       </ul>
     </div>
 
@@ -378,14 +392,14 @@
   <section class="section historia" id="historia" aria-label="La Muralla">
 
     <div class="historia-body">
-      <p class="section-index"><span class="idx-num">06</span><span class="idx-line" aria-hidden="true"></span>La Muralla</p>
-      <h2 class="section-title dark">
+      <p class="section-index"><span class="idx-num">06</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.muralla">La Muralla</span></p>
+      <h2 class="section-title dark" data-i18n="his.title">
         Tres siglos antes,<br>
         ya estábamos<br>
         <em>en el mapa</em>
       </h2>
-      <p class="body-text">Este grabado de Sébastien de Beaulieu (1655) muestra la villa amurallada de Cadaqués —"Cap de Quiers"— durante el sitio de las tropas de Luis XIV. Las piedras de aquella muralla son hoy las paredes de nuestro comedor.</p>
-      <p class="body-text">El pin señala dónde está Vincle: dentro del trazado original de la muralla, en el corazón del casco antiguo.</p>
+      <p class="body-text" data-i18n="his.p1">Este grabado de Sébastien de Beaulieu (1655) muestra la villa amurallada de Cadaqués —"Cap de Quiers"— durante el sitio de las tropas de Luis XIV. Las piedras de aquella muralla son hoy las paredes de nuestro comedor.</p>
+      <p class="body-text" data-i18n="his.p2">El pin señala dónde está Vincle: dentro del trazado original de la muralla, en el corazón del casco antiguo.</p>
     </div>
 
     <div class="historia-media">
@@ -409,26 +423,26 @@
   <section class="section contacto" id="eventos" aria-label="Eventos privados y empleo">
 
     <div class="contacto-header">
-      <p class="section-index"><span class="idx-num">07</span><span class="idx-line" aria-hidden="true"></span>Hablemos</p>
-      <h2 class="section-title dark">
+      <p class="section-index"><span class="idx-num">07</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.hablemos">Hablemos</span></p>
+      <h2 class="section-title dark" data-i18n="con.title">
         Celebra o<br>
         <em>únete</em> a Vincle
       </h2>
     </div>
 
     <div class="contacto-tabs" role="tablist" aria-label="Formularios de contacto">
-      <button class="contacto-tab active" id="tabEventos" role="tab" aria-selected="true" aria-controls="formEventosPanel">Eventos privados</button>
-      <button class="contacto-tab" id="tabTrabajo" role="tab" aria-selected="false" aria-controls="formTrabajoPanel">Trabaja con nosotros</button>
+      <button class="contacto-tab active" id="tabEventos" role="tab" aria-selected="true" aria-controls="formEventosPanel" data-i18n="con.tab1">Eventos privados</button>
+      <button class="contacto-tab" id="tabTrabajo" role="tab" aria-selected="false" aria-controls="formTrabajoPanel" data-i18n="con.tab2">Trabaja con nosotros</button>
     </div>
 
     <!-- ── Eventos privados ── -->
     <div class="contacto-panel" id="formEventosPanel" role="tabpanel" aria-labelledby="tabEventos">
-      <p class="body-text contacto-intro">Vincle ofrece la posibilidad de celebrar eventos privados, reuniones familiares, comidas de empresa o encuentros gastronómicos en un entorno único del casco antiguo de Cadaqués. Adaptamos cada propuesta según las necesidades de cada grupo para que la experiencia mantenga la misma esencia que vivimos cada día en el restaurante.</p>
+      <p class="body-text contacto-intro" data-i18n="con.intro1">Vincle ofrece la posibilidad de celebrar eventos privados, reuniones familiares, comidas de empresa o encuentros gastronómicos en un entorno único del casco antiguo de Cadaqués. Adaptamos cada propuesta según las necesidades de cada grupo para que la experiencia mantenga la misma esencia que vivimos cada día en el restaurante.</p>
       <form class="vincle-form" id="formEventos" novalidate>
         <input type="hidden" name="_subject" value="Web Vincle — Solicitud de evento privado">
         <div class="form-grid">
           <label class="form-field">
-            <span>Nombre *</span>
+            <span data-i18n="f.nombre">Nombre *</span>
             <input type="text" name="nombre" required autocomplete="name">
           </label>
           <label class="form-field">
@@ -436,35 +450,35 @@
             <input type="email" name="email" required autocomplete="email">
           </label>
           <label class="form-field">
-            <span>Teléfono</span>
+            <span data-i18n="f.telefono">Teléfono</span>
             <input type="tel" name="telefono" autocomplete="tel">
           </label>
           <label class="form-field">
-            <span>Fecha deseada</span>
+            <span data-i18n="f.fecha">Fecha deseada</span>
             <input type="date" name="fecha">
           </label>
           <label class="form-field">
-            <span>Nº de invitados</span>
-            <input type="number" name="invitados" min="2" max="200" placeholder="p. ej. 25">
+            <span data-i18n="f.invitados">Nº de invitados</span>
+            <input type="number" name="invitados" min="2" max="200" placeholder="p. ej. 25" data-i18n-ph="ph.invitados">
           </label>
           <label class="form-field">
-            <span>Tipo de evento</span>
+            <span data-i18n="f.tipo">Tipo de evento</span>
             <select name="tipo_evento">
-              <option value="">Selecciona…</option>
-              <option>Comida / cena de empresa</option>
-              <option>Celebración familiar</option>
-              <option>Boda / pedida</option>
-              <option>Grupo grande</option>
-              <option>Otro</option>
+              <option value="" data-i18n="f.opt.sel">Selecciona…</option>
+              <option data-i18n="f.opt.empresa">Comida / cena de empresa</option>
+              <option data-i18n="f.opt.familiar">Celebración familiar</option>
+              <option data-i18n="f.opt.boda">Boda / pedida</option>
+              <option data-i18n="f.opt.grupo">Grupo grande</option>
+              <option data-i18n="f.opt.otro">Otro</option>
             </select>
           </label>
           <label class="form-field form-field-full">
-            <span>Cuéntanos más</span>
-            <textarea name="mensaje" rows="4" placeholder="Horario, menú, alergias, presupuesto orientativo…"></textarea>
+            <span data-i18n="f.mas">Cuéntanos más</span>
+            <textarea name="mensaje" rows="4" placeholder="Horario, menú, alergias, presupuesto orientativo…" data-i18n-ph="ph.mensaje"></textarea>
           </label>
         </div>
         <button type="submit" class="btn btn-vi form-submit">
-          Enviar solicitud
+          <span data-i18n="f.send1">Enviar solicitud</span>
           <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
             <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
@@ -475,12 +489,12 @@
 
     <!-- ── Trabaja con nosotros ── -->
     <div class="contacto-panel" id="formTrabajoPanel" role="tabpanel" aria-labelledby="tabTrabajo" hidden>
-      <p class="body-text contacto-intro">Buscamos personas con ganas, respeto por el producto y amor por la hostelería. Si te ves en nuestra cocina o en nuestra sala, escríbenos.</p>
+      <p class="body-text contacto-intro" data-i18n="con.intro2">Buscamos personas con ganas, respeto por el producto y amor por la hostelería. Si te ves en nuestra cocina o en nuestra sala, escríbenos.</p>
       <form class="vincle-form" id="formTrabajo" novalidate>
         <input type="hidden" name="_subject" value="Web Vincle — Candidatura: trabaja con nosotros">
         <div class="form-grid">
           <label class="form-field">
-            <span>Nombre *</span>
+            <span data-i18n="f.nombre">Nombre *</span>
             <input type="text" name="nombre" required autocomplete="name">
           </label>
           <label class="form-field">
@@ -488,40 +502,40 @@
             <input type="email" name="email" required autocomplete="email">
           </label>
           <label class="form-field">
-            <span>Teléfono</span>
+            <span data-i18n="f.telefono">Teléfono</span>
             <input type="tel" name="telefono" autocomplete="tel">
           </label>
           <label class="form-field">
-            <span>Puesto *</span>
+            <span data-i18n="f.puesto">Puesto *</span>
             <select name="puesto" required>
-              <option value="">Selecciona…</option>
-              <option>Cocina</option>
-              <option>Sala</option>
-              <option>Barra</option>
-              <option>Prácticas / stage</option>
-              <option>Otro</option>
+              <option value="" data-i18n="f.opt.sel">Selecciona…</option>
+              <option data-i18n="f.opt.cocina">Cocina</option>
+              <option data-i18n="f.opt.sala">Sala</option>
+              <option data-i18n="f.opt.barra">Barra</option>
+              <option data-i18n="f.opt.stage">Prácticas / stage</option>
+              <option data-i18n="f.opt.otro">Otro</option>
             </select>
           </label>
           <label class="form-field">
-            <span>Disponibilidad</span>
+            <span data-i18n="f.disp">Disponibilidad</span>
             <select name="disponibilidad">
-              <option value="">Selecciona…</option>
-              <option>Inmediata</option>
-              <option>Temporada de verano</option>
-              <option>A convenir</option>
+              <option value="" data-i18n="f.opt.sel">Selecciona…</option>
+              <option data-i18n="f.opt.inmediata">Inmediata</option>
+              <option data-i18n="f.opt.verano">Temporada de verano</option>
+              <option data-i18n="f.opt.convenir">A convenir</option>
             </select>
           </label>
           <label class="form-field">
-            <span>Enlace a CV / LinkedIn</span>
+            <span data-i18n="f.cv">Enlace a CV / LinkedIn</span>
             <input type="url" name="cv_enlace" placeholder="https://…">
           </label>
           <label class="form-field form-field-full">
-            <span>Preséntate *</span>
-            <textarea name="mensaje" rows="4" required placeholder="Experiencia, motivación, lo que te hace especial…"></textarea>
+            <span data-i18n="f.presentate">Preséntate *</span>
+            <textarea name="mensaje" rows="4" required placeholder="Experiencia, motivación, lo que te hace especial…" data-i18n-ph="ph.presentate"></textarea>
           </label>
         </div>
         <button type="submit" class="btn btn-vi form-submit">
-          Enviar candidatura
+          <span data-i18n="f.send2">Enviar candidatura</span>
           <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
             <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
@@ -540,15 +554,15 @@
     <div class="reservar-info">
 
       <div class="reservar-content">
-        <p class="section-index"><span class="idx-num">08</span><span class="idx-line" aria-hidden="true"></span>Reservas</p>
-        <h2 class="section-title dark">
+        <p class="section-index"><span class="idx-num">08</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.reservas">Reservas</span></p>
+        <h2 class="section-title dark" data-i18n="res.title">
           ¿Nos vemos<br>
           en <em>Cadaqués</em>?
         </h2>
-        <p class="body-text">Reserva tu mesa en Vincle y descubre una cocina mediterránea de temporada en pleno centro histórico de Cadaqués. Si tienes cualquier consulta, estaremos encantados de ayudarte.</p>
+        <p class="body-text" data-i18n="res.body">Reserva tu mesa en Vincle y descubre una cocina mediterránea de temporada en pleno centro histórico de Cadaqués. Si tienes cualquier consulta, estaremos encantados de ayudarte.</p>
         <div class="reservar-btns">
           <a href="https://www.covermanager.com/reserve/module_restaurant/restaurante-vincle/spanish" target="_blank" rel="noopener noreferrer" class="btn btn-vi">
-            Reservar mesa online
+            <span data-i18n="res.btn">Reservar mesa online</span>
             <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
               <path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
@@ -570,29 +584,29 @@
 
       <div class="horarios">
         <h3 class="horarios-title">
-          Horario
+          <span data-i18n="hor.title">Horario</span>
           <span id="horario-live-badge" class="horario-live" hidden>● Actualizado</span>
         </h3>
         <dl class="horarios-list" id="horarios-list">
           <div class="horario-row">
-            <dt>Miércoles</dt>
+            <dt data-i18n="hor.d1">Miércoles</dt>
             <span class="horario-sep" aria-hidden="true"></span>
             <dd>13:00 – 15:30</dd>
           </div>
           <div class="horario-row">
-            <dt>Jue – Sáb</dt>
+            <dt data-i18n="hor.d2">Jue – Sáb</dt>
             <span class="horario-sep" aria-hidden="true"></span>
             <dd>13:00 – 15:30 · 20:00 – 22:30</dd>
           </div>
           <div class="horario-row">
-            <dt>Domingo</dt>
+            <dt data-i18n="hor.d3">Domingo</dt>
             <span class="horario-sep" aria-hidden="true"></span>
             <dd>13:00 – 15:30</dd>
           </div>
           <div class="horario-row horario-cerrado">
-            <dt>Lun – Mar</dt>
+            <dt data-i18n="hor.d4">Lun – Mar</dt>
             <span class="horario-sep" aria-hidden="true"></span>
-            <dd>Cerrado</dd>
+            <dd data-i18n="hor.cerrado">Cerrado</dd>
           </div>
         </dl>
         <address class="reservar-address">
@@ -618,8 +632,8 @@
   <section class="section faq" id="faq" aria-label="Preguntas frecuentes">
 
     <div class="faq-header">
-      <p class="section-index"><span class="idx-num">09</span><span class="idx-line" aria-hidden="true"></span>Preguntas frecuentes</p>
-      <h2 class="section-title dark">
+      <p class="section-index"><span class="idx-num">09</span><span class="idx-line" aria-hidden="true"></span><span data-i18n="idx.faq">Preguntas frecuentes</span></p>
+      <h2 class="section-title dark" data-i18n="faq.title">
         ¿Tienes alguna<br>
         <em>duda</em>?
       </h2>
@@ -628,37 +642,37 @@
     <div class="faq-list">
 
       <details class="faq-item">
-        <summary class="faq-question">¿Dónde comer en Cadaqués?</summary>
+        <summary class="faq-question" data-i18n="faq.q1">¿Dónde comer en Cadaqués?</summary>
         <div class="faq-answer">
-          <p class="body-text">En pleno casco antiguo de Cadaqués, Vincle ofrece una cocina mediterránea de temporada entre las paredes de la antigua muralla. Una experiencia gastronómica donde el producto, la tradición y el territorio son los protagonistas.</p>
+          <p class="body-text" data-i18n="faq.a1">En pleno casco antiguo de Cadaqués, Vincle ofrece una cocina mediterránea de temporada entre las paredes de la antigua muralla. Una experiencia gastronómica donde el producto, la tradición y el territorio son los protagonistas.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary class="faq-question">¿Es necesario reservar?</summary>
+        <summary class="faq-question" data-i18n="faq.q2">¿Es necesario reservar?</summary>
         <div class="faq-answer">
-          <p class="body-text">Recomendamos reservar con antelación, especialmente en temporada alta. Puedes reservar tu mesa online o llamarnos al <a href="tel:+34623213155">+34 623 21 31 55</a>.</p>
+          <p class="body-text" data-i18n="faq.a2">Recomendamos reservar con antelación, especialmente en temporada alta. Puedes reservar tu mesa online o llamarnos al <a href="tel:+34623213155">+34 623 21 31 55</a>.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary class="faq-question">¿Qué tipo de cocina ofrece Vincle?</summary>
+        <summary class="faq-question" data-i18n="faq.q3">¿Qué tipo de cocina ofrece Vincle?</summary>
         <div class="faq-answer">
-          <p class="body-text">Cocina mediterránea de producto y de temporada, con raíces en la tradición y una mirada contemporánea. Trabajamos con productos seleccionados en su mejor momento, ligados al entorno de Cadaqués y el Cap de Creus.</p>
+          <p class="body-text" data-i18n="faq.a3">Cocina mediterránea de producto y de temporada, con raíces en la tradición y una mirada contemporánea. Trabajamos con productos seleccionados en su mejor momento, ligados al entorno de Cadaqués y el Cap de Creus.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary class="faq-question">¿Hay opciones vegetarianas?</summary>
+        <summary class="faq-question" data-i18n="faq.q4">¿Hay opciones vegetarianas?</summary>
         <div class="faq-answer">
-          <p class="body-text">Sí. Nuestra carta de temporada incluye opciones vegetarianas y adaptamos los platos a alergias e intolerancias. Indícanoslo al reservar y lo tendremos todo preparado.</p>
+          <p class="body-text" data-i18n="faq.a4">Sí. Nuestra carta de temporada incluye opciones vegetarianas y adaptamos los platos a alergias e intolerancias. Indícanoslo al reservar y lo tendremos todo preparado.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary class="faq-question">¿Dónde está situado?</summary>
+        <summary class="faq-question" data-i18n="faq.q5">¿Dónde está situado?</summary>
         <div class="faq-answer">
-          <p class="body-text">En el Carrer Vigilant, 8, un tranquilo callejón del casco antiguo de Cadaqués (Girona), a pocos pasos de la iglesia de Santa Maria y del paseo marítimo.</p>
+          <p class="body-text" data-i18n="faq.a5">En el Carrer Vigilant, 8, un tranquilo callejón del casco antiguo de Cadaqués (Girona), a pocos pasos de la iglesia de Santa Maria y del paseo marítimo.</p>
         </div>
       </details>
 
@@ -713,7 +727,7 @@
         <div class="footer-logo">
           <img src="assets/logo.png" alt="Vincle Cadaqués" class="footer-logo-img">
         </div>
-        <p>Cuina mediterrània al cor<br>del casc antic de Cadaqués</p>
+        <p data-i18n="foot.tag">Cuina mediterrània al cor<br>del casc antic de Cadaqués</p>
         <a href="https://www.instagram.com/restaurantvincle/" target="_blank" rel="noopener noreferrer" class="footer-ig" aria-label="Instagram @restaurantvincle">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
@@ -724,15 +738,15 @@
         </a>
       </div>
       <nav class="footer-nav" aria-label="Navegación pie de página">
-        <a href="#restaurante">El Restaurante</a>
-        <a href="#cocina">La Cocina</a>
-        <a href="#vinos">Los Vinos</a>
-        <a href="#equipo">El Equipo</a>
-        <a href="#espacio">El Espacio</a>
-        <a href="#historia">La Muralla</a>
-        <a href="#eventos">Eventos privados</a>
-        <a href="#eventos">Trabaja con nosotros</a>
-        <a href="#reservar">Reservar</a>
+        <a href="#restaurante" data-i18n="nav.rest">El Restaurante</a>
+        <a href="#cocina" data-i18n="nav.cocina">La Cocina</a>
+        <a href="#vinos" data-i18n="nav.vinos">Los Vinos</a>
+        <a href="#equipo" data-i18n="idx.equipo">El Equipo</a>
+        <a href="#espacio" data-i18n="nav.espacio">El Espacio</a>
+        <a href="#historia" data-i18n="nav.muralla">La Muralla</a>
+        <a href="#eventos" data-i18n="con.tab1">Eventos privados</a>
+        <a href="#eventos" data-i18n="con.tab2">Trabaja con nosotros</a>
+        <a href="#reservar" data-i18n="nav.reservar">Reservar</a>
       </nav>
       <div class="footer-info">
         <a href="tel:+34623213155">+34 623 21 31 55</a>
@@ -741,9 +755,9 @@
           17488 Cadaqués, Girona
         </address>
         <div class="footer-horario-mini">
-          <span>Mié: 13–15:30</span>
-          <span>Jue–Sáb: 13–15:30 / 20–22:30</span>
-          <span>Dom: 13–15:30</span>
+          <span data-i18n="foot.h1">Mié: 13–15:30</span>
+          <span data-i18n="foot.h2">Jue–Sáb: 13–15:30 / 20–22:30</span>
+          <span data-i18n="foot.h3">Dom: 13–15:30</span>
         </div>
       </div>
     </div>
@@ -785,7 +799,7 @@
       </svg>
     </div>
 
-    <p class="footer-gracias">Gracias por formar parte de <em>Vincle</em>.</p>
+    <p class="footer-gracias" data-i18n="foot.gracias">Gracias por formar parte de <em>Vincle</em>.</p>
 
     <div class="footer-bottom">
       <p>© 2026 Vincle Cadaqués · Cadaqués, Costa Brava</p>
@@ -793,14 +807,20 @@
     </div>
   </footer>
 
-  <!-- GSAP + ScrollTrigger (CDN) -->
+  <!-- GSAP + ScrollTrigger (CDN) — animaciones -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
+  <script src="scripts/i18n.js"></script>
 
   <!-- Google Maps + Places API
        1. Ve a console.cloud.google.com
        2. Crea un proyecto → habilita "Maps JavaScript API" y "Places API"
        3. Crea una API Key y reemplaza YOUR_API_KEY abajo -->
   <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFE3Ds9oKEKFIC1U7hHcS7DgbaQjfuT_Q&libraries=pla
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFE3Ds9oKEKFIC1U7hHcS7DgbaQjfuT_Q&libraries=places&language=es&callback=initVincleMap">
+  </script>
+
+</body>
+</html>
