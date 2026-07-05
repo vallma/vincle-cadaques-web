@@ -141,6 +141,124 @@ address { font-style: normal; }
   padding: var(--pad-y) var(--pad-x);
 }
 
+/* ─── Un nombre con significado (dentro de El Restaurante) ─── */
+.significado {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(22, 19, 16, 0.12);
+}
+
+.significado-title {
+  font-family: var(--ff-display);
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  font-weight: 480;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+}
+
+.significado-title em {
+  font-style: italic;
+  color: var(--vi);
+}
+
+.significado-list {
+  margin: 0.5rem 0 1.25rem;
+  max-width: 52ch;
+}
+
+.significado-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.significado-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--vi);
+}
+
+.significado-cierre {
+  font-family: var(--ff-display);
+  font-style: italic;
+  color: var(--ink);
+}
+
+/* ─── FAQ — Preguntas frecuentes ─── */
+.faq {
+  background: var(--paper-deep);
+  max-width: 100%;
+}
+
+.faq-header { margin-bottom: 3rem; }
+
+.faq-list {
+  max-width: 760px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(22, 19, 16, 0.14);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid rgba(22, 19, 16, 0.14);
+}
+
+.faq-question {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  padding: 1.35rem 3rem 1.35rem 0;
+  font-family: var(--ff-display);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 480;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  transition: color 0.3s var(--ease-out);
+}
+
+.faq-question::-webkit-details-marker { display: none; }
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--ff-body);
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--vi);
+  transition: transform 0.3s var(--ease-out);
+}
+
+.faq-item[open] .faq-question::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-question:hover { color: var(--vi); }
+
+.faq-answer {
+  padding: 0 0 1.5rem;
+}
+
+.faq-answer .body-text {
+  max-width: 58ch;
+  margin-bottom: 0;
+}
+
+.faq-answer a {
+  color: var(--vi);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ─── Marquee strip ─── */
 .marquee {
   overflow: hidden;
@@ -475,6 +593,15 @@ address { font-style: normal; }
   font-size: clamp(4.5rem, 15vw, 13.5rem);
 }
 
+.hero-word-sm {
+  font-size: clamp(1.1rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--sand);
+  margin-bottom: 0.5rem;
+}
+
 .hero-title em.hero-word {
   font-style: italic;
   font-weight: 300;
@@ -484,11 +611,12 @@ address { font-style: normal; }
 }
 
 .hero-sub {
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
   font-weight: 300;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.75;
   color: var(--sand);
+  max-width: 58ch;
   margin-bottom: 2.5rem;
 }
 
@@ -1209,95 +1337,96 @@ address { font-style: normal; }
   color: var(--sand-dim);
 }
 
-/* ─── El golden de la puerta ───
-   Homenaje sutil al perro que siempre está en la entrada.
-   Mueve la cola de vez en cuando; al hover se pone contento. */
-.footer-dog {
+/* ─── El llamàntol del Cap de Creus ───
+   Homenaje al producto estrella del territorio.
+   Mueve las antenas de vez en cuando; al hover saluda con la pinza. */
+.footer-llamantol {
   position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 0.5rem;
 }
 
-.footer-dog svg {
-  width: 132px;
+.footer-llamantol svg {
+  width: 148px;
   height: auto;
-  color: #e6cb94;
+  color: var(--vi-light);
   fill: currentColor;
   opacity: 0.8;
   transition: opacity 0.4s var(--ease-out), color 0.4s var(--ease-out);
 }
 
-.footer-dog:hover svg {
+.footer-llamantol:hover svg {
   opacity: 1;
-  color: #f0d9a8;
+  color: #a63a4c;
 }
 
-/* Rasgos de Dashi, golden rubita */
-.dog-ear     { fill: #c9a767; }
-.dog-haunch  { fill: #c9a767; opacity: 0.5; }
-.dog-leg-far { fill: #c9a767; opacity: 0.6; }
-.dog-chest   { fill: #f6ecd2; opacity: 0.9; }
-.dog-collar  { fill: var(--vi-light); }
-.dog-nose,
-.dog-eye     { fill: #241a12; }
-.dog-mouth {
+/* Rasgos del llamàntol */
+.lla-antena   { fill: currentColor; opacity: 0.55; }
+.lla-pinza-2  { fill: currentColor; opacity: 0.85; }
+.lla-pata     { fill: currentColor; opacity: 0.5; }
+.lla-cola-seg { fill: currentColor; opacity: 0.75; }
+.lla-abanico  { fill: currentColor; opacity: 0.6; }
+.lla-ojo      { fill: #241a12; }
+.lla-marca {
   fill: none;
   stroke: #241a12;
-  stroke-width: 1.4;
+  stroke-width: 1.2;
   stroke-linecap: round;
-  opacity: 0.65;
-}
-.dog-tongue  { fill: var(--vi-light); }
-
-.dog-resting {
-  transform-origin: 90px 80px;
-  animation: dogBreathe 5s ease-in-out infinite;
+  opacity: 0.25;
 }
 
-@keyframes dogBreathe {
+.llamantol-resting {
+  transform-origin: 110px 90px;
+  animation: llaBreathe 5s ease-in-out infinite;
+}
+
+@keyframes llaBreathe {
   0%, 100% { transform: scaleY(1); }
-  50%      { transform: scaleY(1.018); }
+  50%      { transform: scaleY(1.015); }
 }
 
-.dog-tail {
-  transform-origin: 130px 70px;
-  animation: tailWag 8s ease-in-out infinite;
+.lla-antena-1 {
+  transform-origin: 52px 40px;
+  animation: antenaSway 8s ease-in-out infinite;
 }
 
-@keyframes tailWag {
+.lla-antena-2 {
+  transform-origin: 56px 48px;
+  animation: antenaSway 8s ease-in-out 0.4s infinite;
+}
+
+@keyframes antenaSway {
   0%, 76%, 94%, 100% { transform: rotate(0deg); }
-  80%  { transform: rotate(13deg); }
-  84%  { transform: rotate(-5deg); }
-  88%  { transform: rotate(11deg); }
-  91%  { transform: rotate(-2deg); }
+  80%  { transform: rotate(6deg); }
+  84%  { transform: rotate(-3deg); }
+  88%  { transform: rotate(5deg); }
+  91%  { transform: rotate(-1deg); }
 }
 
-.footer-dog:hover .dog-tail {
-  animation: tailWagFast 0.55s ease-in-out infinite;
+.lla-pinza { transform-origin: 62px 40px; }
+
+.footer-llamantol:hover .lla-pinza {
+  animation: pinzaSaluda 0.6s ease-in-out infinite;
 }
 
-@keyframes tailWagFast {
-  0%, 100% { transform: rotate(-6deg); }
-  50%      { transform: rotate(15deg); }
+@keyframes pinzaSaluda {
+  0%, 100% { transform: rotate(-4deg); }
+  50%      { transform: rotate(8deg); }
 }
 
-.footer-dog-caption {
-  position: absolute;
-  bottom: calc(100% + 0.3rem);
-  left: 50%;
-  transform: translateX(-50%);
+/* ─── Gracias por formar parte de Vincle ─── */
+.footer-gracias {
+  text-align: center;
   font-family: var(--ff-display);
   font-style: italic;
-  font-size: 0.85rem;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 300;
   color: var(--sand);
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.4s var(--ease-out);
-  pointer-events: none;
+  margin-bottom: 2rem;
 }
 
-.footer-dog:hover .footer-dog-caption { opacity: 1; }
+.footer-gracias em { color: var(--vi-light); font-style: italic; }
 
 .footer-bottom {
   text-align: center;
@@ -1590,8 +1719,9 @@ address { font-style: normal; }
   .hero-glow::before,
   .hero-glow::after,
   .hero-scroll-line,
-  .dog-tail,
-  .dog-resting {
+  .lla-antena-1,
+  .lla-antena-2,
+  .llamantol-resting {
     animation: none;
   }
   html { scroll-behavior: auto; }
@@ -1606,3 +1736,4 @@ address { font-style: normal; }
 .hero-actions,
 .hero-scroll,
 .hero-marquee { opacity: 0; }
+                                                                                                                                                                                                                                                                                                                                                                                                                
