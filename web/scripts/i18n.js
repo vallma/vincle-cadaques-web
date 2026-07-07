@@ -76,7 +76,10 @@ const I18N = {
     'faq.a5': 'En el Carrer Vigilant, 8, un tranquilo callejón del casco antiguo de Cadaqués (Girona), a pocos pasos de la iglesia de Santa Maria y del paseo marítimo.',
     'foot.tag': 'Cuina mediterrània al cor<br>del casc antic de Cadaqués',
     'foot.h1': 'Mié: 13–15:30', 'foot.h2': 'Jue–Sáb: 13–15:30 / 20–22:30', 'foot.h3': 'Dom: 13–15:30',
-    'foot.gracias': 'Gracias por formar parte de <em>Vincle</em>.'
+    'foot.gracias': 'Gracias por formar parte de <em>Vincle</em>.',
+    'leg.aviso': 'Aviso legal', 'leg.priv': 'Política de privacidad', 'leg.cook': 'Política de cookies',
+    'ck.text': 'Utilizamos cookies de análisis para conocer las visitas y mejorar la web. Solo se activan si las aceptas.',
+    'ck.more': 'Más información', 'ck.accept': 'Aceptar', 'ck.reject': 'Rechazar'
   },
 
   /* ─── Català ─── */
@@ -150,7 +153,10 @@ const I18N = {
     'faq.a5': "Al Carrer Vigilant, 8, un tranquil carreró del nucli antic de Cadaqués (Girona), a pocs passos de l'església de Santa Maria i del passeig marítim.",
     'foot.tag': 'Cuina mediterrània al cor<br>del casc antic de Cadaqués',
     'foot.h1': 'Dc: 13–15:30', 'foot.h2': 'Dj–Ds: 13–15:30 / 20–22:30', 'foot.h3': 'Dg: 13–15:30',
-    'foot.gracias': 'Gràcies per formar part de <em>Vincle</em>.'
+    'foot.gracias': 'Gràcies per formar part de <em>Vincle</em>.',
+    'leg.aviso': 'Avís legal', 'leg.priv': 'Política de privacitat', 'leg.cook': 'Política de galetes',
+    'ck.text': "Fem servir galetes d'anàlisi per conèixer les visites i millorar la web. Només s'activen si les acceptes.",
+    'ck.more': 'Més informació', 'ck.accept': 'Acceptar', 'ck.reject': 'Rebutjar'
   },
 
   /* ─── English ─── */
@@ -224,7 +230,10 @@ const I18N = {
     'faq.a5': 'At Carrer Vigilant, 8, a quiet alley in the old town of Cadaqués (Girona), a few steps from the church of Santa Maria and the seafront promenade.',
     'foot.tag': 'Mediterranean cuisine in the heart<br>of the old town of Cadaqués',
     'foot.h1': 'Wed: 13–15:30', 'foot.h2': 'Thu–Sat: 13–15:30 / 20–22:30', 'foot.h3': 'Sun: 13–15:30',
-    'foot.gracias': 'Thank you for being part of <em>Vincle</em>.'
+    'foot.gracias': 'Thank you for being part of <em>Vincle</em>.',
+    'leg.aviso': 'Legal notice', 'leg.priv': 'Privacy policy', 'leg.cook': 'Cookie policy',
+    'ck.text': 'We use analytics cookies to understand our visits and improve the site. They are only activated if you accept them.',
+    'ck.more': 'More information', 'ck.accept': 'Accept', 'ck.reject': 'Reject'
   },
 
   /* ─── Français ─── */
@@ -298,7 +307,10 @@ const I18N = {
     'faq.a5': "Au Carrer Vigilant, 8, une ruelle tranquille de la vieille ville de Cadaqués (Gérone), à quelques pas de l'église de Santa Maria et de la promenade du bord de mer.",
     'foot.tag': 'Cuisine méditerranéenne au cœur<br>de la vieille ville de Cadaqués',
     'foot.h1': 'Mer : 13–15:30', 'foot.h2': 'Jeu–Sam : 13–15:30 / 20–22:30', 'foot.h3': 'Dim : 13–15:30',
-    'foot.gracias': 'Merci de faire partie de <em>Vincle</em>.'
+    'foot.gracias': 'Merci de faire partie de <em>Vincle</em>.',
+    'leg.aviso': 'Mentions légales', 'leg.priv': 'Politique de confidentialité', 'leg.cook': 'Politique de cookies',
+    'ck.text': "Nous utilisons des cookies d'analyse pour connaître les visites et améliorer le site. Ils ne sont activés que si vous les acceptez.",
+    'ck.more': "Plus d'informations", 'ck.accept': 'Accepter', 'ck.reject': 'Refuser'
   }
 };
 

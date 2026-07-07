@@ -10,6 +10,12 @@
   <meta property="og:image" content="https://static1.ara.cat/clip/ede11d0b-4bd0-4627-b411-3be6cb47cb0c_16-9-aspect-ratio_default_0_x1710y1384.jpg">
   <meta property="og:type" content="restaurant">
 
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
   <!-- Fonts: Fraunces (display) + Space Grotesk (UI/body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -411,7 +417,7 @@
             <span class="mapa-pin-label">Vincle</span>
           </button>
         </div>
-        <figcaption class="mapa-caption">Plan de la Ville de Cap de Quiers en Catalogne · S. de Beaulieu, 1655 · BnF</figcaption>
+        <figcaption class="mapa-caption">Plan de la Ville de Cap de Quiers en Catalogne · S. de Beaulieu, 1655 · BnF · Arxiu Pere Vehí</figcaption>
       </figure>
     </div>
 
@@ -802,10 +808,31 @@
     <p class="footer-gracias" data-i18n="foot.gracias">Gracias por formar parte de <em>Vincle</em>.</p>
 
     <div class="footer-bottom">
+      <nav class="footer-legal" aria-label="Páginas legales">
+        <a href="aviso-legal.html" data-i18n="leg.aviso">Aviso legal</a>
+        <span aria-hidden="true">·</span>
+        <a href="privacidad.html" data-i18n="leg.priv">Política de privacidad</a>
+        <span aria-hidden="true">·</span>
+        <a href="cookies.html" data-i18n="leg.cook">Política de cookies</a>
+      </nav>
       <p>© 2026 Vincle Cadaqués · Cadaqués, Costa Brava</p>
       <p class="footer-credit">Desarrollado por <a href="https://agenciadigitalcapdecreus.com/" target="_blank" rel="noopener noreferrer">AVP</a></p>
     </div>
   </footer>
+
+  <!-- ══════════════════════════════════════
+       BANNER DE COOKIES
+  ══════════════════════════════════════ -->
+  <div class="cookie-banner" id="cookieBanner" hidden role="dialog" aria-modal="false" aria-label="Aviso de cookies">
+    <p class="cookie-text">
+      <span data-i18n="ck.text">Utilizamos cookies de análisis para conocer las visitas y mejorar la web. Solo se activan si las aceptas.</span>
+      <a href="cookies.html" data-i18n="ck.more">Más información</a>
+    </p>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-btn cookie-accept" id="ckAccept" data-i18n="ck.accept">Aceptar</button>
+      <button type="button" class="cookie-btn cookie-reject" id="ckReject" data-i18n="ck.reject">Rechazar</button>
+    </div>
+  </div>
 
   <!-- GSAP + ScrollTrigger (CDN) — animaciones -->
 
@@ -813,6 +840,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
   <script src="scripts/i18n.js"></script>
+  <script src="scripts/cookies.js"></script>
 
   <!-- Google Maps + Places API
        1. Ve a console.cloud.google.com
